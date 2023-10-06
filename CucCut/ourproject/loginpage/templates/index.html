@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Melia Nha Trang</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+    <link rel="stylesheet" href="{% static "boottrap/css/bootstrap.min.css" %}">
+</head>
+<body>
+    <div class="background">
+        <img src="{% static "images/background.jpg" %}" alt="">
+    </div>
+    <!-- <div class="bg-mb">
+        <img src="./static/images/bg-mb.jpg" alt="">
+    </div> -->
+    <div class="content">
+        <div class="main">
+            <div class="logo">
+                <img src="{% static "images/logo.png" %}" alt="">
+            </div>
+            <div class="slogan">
+                <p>A life well lived</p>
+            </div>
+            <div class="welcome">
+                <p>Welcome to Gran Meliá Nha Trang!</p>
+            </div>
+            <div class="welcome-00">
+                <div class="welcome-01">
+                    <p>Welcome to</p>
+                </div>
+                <div class="welcome-02">
+                    <p>Gran Meliá Nha Trang!</p>
+                </div>
+            </div>
+            <div class="login">
+                <form action="/login/" method="post" name="id_welcome" id = "id_welcome">
+                     {% csrf_token %} 
+                    <div class="login-name">
+                        
+                        <input type="text" id = "username" name = "username" placeholder="  Your last name" pattern="[A-Za-z]{0,10}" required>
+                    </div>
+                    <div class="login-room">
+                        
+                        <input type="text" id = "roomnumber" name = "roomnumber" placeholder="  Your room number" pattern="[0-9]{0,10}" required>
+                    </div>
+                    <div class="connect">
+                        <form>
+                            <button value="submit">Connect</button>
+                        </form>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{% static "boottrap/js/bootstrap.min.js" %}">
+    {% comment %} function welcome(){
+        $("#id_welcome").submit();
+    }; {% endcomment %}
+</script>
+</html>

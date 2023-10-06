@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Garamond;
+    src: url('./font/Garamond.ttc');
+}
+
+@font-face {
+    font-family: SVN-CenturyGothic-Regular;
+    src: url(./font/SVN-CenturyGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: SVN-Garamond-Regular;
+    src: url(./font/SVN-Garamond-Regular.otf);
+}
+
+@font-face {
+    font-family: GARAIT;
+    src: url(./font/GARAIT.TTF);
+}

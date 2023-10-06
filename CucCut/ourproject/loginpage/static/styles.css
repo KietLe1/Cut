@@ -1,0 +1,302 @@
+@import url('./font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+}
+
+.background > img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+/* .bg-mb {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+}
+
+.bg-mb > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 80%;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 4%;
+}
+
+/* .grand {
+    margin-top: 50px;
+    font-size: 35px;
+    font-family: 'Garamond', serif;
+}
+
+.NT {
+    font-size: 25px;
+    font-family: 'Garamond', serif;
+    margin-top: -20px;
+}
+
+.VN {
+    font-size: 17px;
+    font-family: 'SVN-Garamond-Regular', serif;
+    margin-top: -23px;
+} */
+
+
+
+.slogan {
+    font-family: 'GARAIT', serif;
+    font-style: italic;
+    font-size: 35px;
+    color: white;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.welcome {
+    margin-top: 30px;
+    color: white;
+    font-size: 60px;
+    font-family: 'Garamond', serif;
+    text-align: center;
+}
+
+.welcome-01 {
+    text-align: center;
+    display: none;
+    color: white;
+    font-size: 55px;
+    font-family: 'Garamond', serif;
+}
+
+.welcome-02 {
+    text-align: center;
+    display: none;
+    color: white;
+    font-size: 55px;
+    font-family: 'Garamond', serif;
+}
+.welcome-02 > p {
+    margin-top: -30px;
+}
+.login {
+    margin-top: 10%;
+}
+.login input {
+    opacity: 0.8;
+    text-align: center;
+}
+.login-name {
+    border-radius: 5px;
+    margin-bottom: 0.5%;
+}
+.login-room {
+    border-radius: 5px;
+}
+::placeholder {
+    font-size: 12px;
+}
+.connect {
+    width: 100%;
+    margin-top: 0.5%;
+    font-size: 17px;
+}
+.connect button {
+    text-align: center;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #ad6433;
+    color: white;
+    width: 182px;
+    height: 30px;
+    border: none;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width:1050px) {
+
+    /* .background {
+        display: none;
+    } */
+    /* .bg-mb {
+        display: flex;
+    } */
+    /* .grand {
+        font-size: 28px;
+    }
+    .NT {
+        font-size: 18px;
+    }
+    .VN {
+        font-size: 13px;
+    } */
+    .background > img {
+        object-fit: cover;
+        object-position: right;
+    }
+
+    .welcome-01 {
+        display: inline;
+        font-size: 50px;
+    }
+    .welcome-02 {
+        font-size: 50px;
+        display: inline;
+    }
+    .welcome {
+        display: none;
+    }
+
+}
+@media screen and (max-width:650px) {
+    /* .background {
+        display: none;
+    } */
+    /* .bg-mb {
+        display: flex;
+    } */
+    .background > img {
+        object-fit: cover;
+        object-position: none;
+    }
+    .welcome-01 {
+        font-size: 45px;
+    }
+
+    .welcome-01 > p {
+        margin-top: 50px;
+    }
+
+    .welcome-02 {
+        font-size: 45px;
+    }
+    .connect {
+        margin-top:60%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .background > img {
+        object-position: left;
+    }
+    .welcome-01 {
+        font-size: 35px;
+    }
+    .welcome-02 {
+        font-size: 35px;
+    }
+
+    .bg-mb img {
+        position: relative;
+        left: -100px;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .background > img {
+        object-position: left;
+    }
+    .main {
+        min-height: auto;
+    }
+    
+    .logo > img {
+        margin-top: 5%;
+        width: 40%;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .welcome-01 {
+        font-size: 25px;
+    }
+    .welcome-02 {
+        font-size: 25px;
+    }
+
+    .connect button {
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .background > img {
+        object-position: left;
+    }
+    .main {
+        min-height: auto;
+    }
+    
+    .logo > img {
+        margin-top: 5%;
+        width: 40%;
+    }
+
+    .slogan {
+        font-size: 16px;
+    }
+
+    .welcome-01 {
+        font-size: 20px;
+    }
+    .welcome-02 {
+        font-size: 20px;
+    }
+
+    .welcome-02 > p {
+        padding-top: 1%;
+    }
+
+    .connect button {
+        width: 120px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+
